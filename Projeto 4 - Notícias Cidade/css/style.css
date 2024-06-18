@@ -28,6 +28,16 @@ body {
 }
 
 /* Barra de navegação */
+a:link,
+a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -228,4 +238,16 @@ h3 {
     width: 750px;
     margin: 0 auto;
     color: #fff;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 800;
+    padding: 10px 0;
+    color: #de003e;
+    text-transform: uppercase;
+}
+
+.text {
+    padding: 0 15px;
 }
