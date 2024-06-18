@@ -166,6 +166,13 @@ input.submit {
     border: 2px solid #870529;
 }
 
+/*Formatando imagens*/
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+
 
 /*Rodape*/
 #container-rodape {
