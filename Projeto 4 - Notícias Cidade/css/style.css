@@ -163,7 +163,7 @@ input.submit {
     width: 80px;
     color: #fff;
     background-color: #b10333;
-    border: 2px solid #870529;
+    border: none;
 }
 
 /*Formatando imagens*/
@@ -172,7 +172,14 @@ img.imagem-principal {
     border: 3px solid #dfdfdf;
 }
 
-
+/*Formatando cabeçalho*/
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: .8em;
+    padding: 3px;
+    color: #de003e;
+}
 
 /*Rodape*/
 #container-rodape {
