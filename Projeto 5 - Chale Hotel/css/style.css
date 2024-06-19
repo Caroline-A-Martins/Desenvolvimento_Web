@@ -12,7 +12,7 @@ body {
 }
 
 #container {
-    background: #ede9cc;
+    background: #ede9cc url(../img/bg-container.png) top center repeat-y;
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
@@ -40,14 +40,14 @@ body {
     top: 15px;
     left: 15px;
     z-index: 3;
-    background: url(../img/logo.png);
+    background: url(../img/logo.png) no-repeat;
     width: 151px;
     height: 66px;
     text-indent: -9000px;
 }
 
 #area-menu {
-    background: url(../img/topo-imagem-lateral.png);
+    background: url(../img/topo-imagem-lateral.png) no-repeat;
     top: 0;
     right: 0;
     position: absolute;
@@ -82,6 +82,7 @@ a {
 #menu-locais a.reserva {
     text-transform: uppercase;
     background: #a29750;
+    color: #fff5b0;
     padding: 5px 10px;
     float: right;
 }
@@ -106,6 +107,7 @@ ul#navegacao a {
     color: #6e672c;
     line-height: 30px;
 }
+
 ul#navegacao a:hover {
     background: #fdf6be;
 }
@@ -114,4 +116,28 @@ ul#navegacao a:hover {
     width: 226px;
     height: 164px;
     float: right;
+}
+
+/*Área de conteúdos*/
+#area-principal {
+    float: left;
+    width: 50%;
+    background: url(../img/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+#area-lateral {
+    float: right;
+    width: 50%;
+    background: url(../img/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#rodape {
+    clear: both;
 }
