@@ -13,6 +13,9 @@ body {
 
 #container {
     background: #ede9cc;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1180px;
 }
 
 #topo {
@@ -29,7 +32,20 @@ body {
     height: 250px;
     top: 0;
     left: 0;
+    z-index: 1;
 }
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../img/logo.png);
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;
+}
+
 #area-menu {
     background: url(../img/topo-imagem-lateral.png);
     top: 0;
@@ -37,5 +53,35 @@ body {
     position: absolute;
     width: 450px;
     height: 250px;
+    z-index: 2;
 }
 
+#conteudo-menu {
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+}
+
+#menu-locais {
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding: 5px 0;
+    font-size: .7em;
+    color: #8b8448;
+}
+
+#menu-locais .locais {
+    float: left;
+    line-height: 2.1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#menu-locais a.reserva {
+    text-transform: uppercase;
+    background: #a29750;
+    padding: 5px 10px;
+    float: right;
+}
