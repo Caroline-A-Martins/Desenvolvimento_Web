@@ -11,18 +11,17 @@ Abrangente desde os fundamentos até técnicas avançadas. Com aulas ministradas
 **Módulos Abordados:**
 1. HTML5
 2. CSS3
-3. SASS
-4. Bootstrap
-5. JavaScript (JS)
-6. ECMAScript 6 (ES6)
-7. PHP
-8. Programação Orientada a Objetos (OO)
-9. MySQL
-10. JQuery
-11. Model-View-Controller (MVC)
-12. APIs (Interfaces de Programação de Aplicações)
-13. IONIC
-14. E muitos outros tópicos essenciais para o desenvolvimento web.
+3. Bootstrap
+4. JavaScript (JS)
+5. ECMAScript 6 (ES6)
+6. PHP
+7. Programação Orientada a Objetos (OO)
+8. MySQL
+9. JQuery
+10. Model-View-Controller (MVC)
+11. APIs (Interfaces de Programação de Aplicações)
+12. IONIC
+13. E muitos outros tópicos essenciais para o desenvolvimento web. 
 
 Este curso oferece uma compreensão abrangente e prática de tecnologias essenciais para criar aplicações web modernas e dinâmicas. Ao concluir o curso, você receberá um certificado reconhecido, validando suas habilidades adquiridas.
 
