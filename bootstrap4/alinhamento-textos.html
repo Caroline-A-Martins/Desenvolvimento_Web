@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Bootstrap - Alinhamento de textos</title>
+  <style>
+    .borda {
+      padding: 15px;
+      margin: 30px 0;
+      border: 1px solid #ccc;
+    }
+
+    .title {
+      color: #006eff;
+      font-size: 35px;
+      border-bottom: 1px solid #008cff;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+  <div class="borda">
+    <!-- Parágrafo justificado -->
+    <h2 class="title">Parágrafo justificado</h2>
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum
+      quam, a viverra ligula
+      fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna
+      vel lorem.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+      fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna
+      vel lorem.</p>
+  </div>
+
+  <!-- 
+        Alinhamento responsivo - text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+  -->
+
+  <div class="borda">
+    <!-- Alinhamento responsivo -->
+    <h2 class="title">Alinhamento responsivo</h2>
+    <p class="text-sm-right">tela Small &gt;= 576px</p><!--Small-->
+    <p class="text-md-right">tela Medium &gt;= 768px</p><!--Medium-->
+    <p class="text-lg-right">tela Large &gt;= 992px</p><!--Large-->
+    <p class="text-lx-right">tela Extra Large &gt;= 1200px</p><!--Extra Large-->
+  </div>
+
+
+  <div class="borda">
+    <!-- Elemento Block para inline -->
+    <h2 class="title">Elemento Block para inline</h2>
+
+    <p class="font-weight-bold" style="font-size: 18px; margin: .5px;">Block:</p>
+    <h4 class="bg-success">Lorem ipsum dolor</h4>
+    <p class="bg-success">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <p class="font-weight-bold" style="font-size: 18px; margin: .5px;">Inline:</p>
+    <h4 class="bg-success d-inline">Lorem ipsum dolor</h4>
+    <p class="bg-success d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+
+
+  <div class="borda">
+    <!-- Elemento Inline para Block -->
+    <h2 class="title">Elemento Inline para Block</h2>
+    <p class="font-weight-bold" style="font-size:18px; margin:.5px;">Inline:</p>
+    <span class="bg-success">Lorem ipsum dolor</span>
+    <span class="bg-success">Lorem ipsum dolor 2</span>
+
+    <p class="font-weight-bold" style="font-size:18px; margin:.5px;">Block:</p>
+    <span class="bg-success d-block">Lorem ipsum dolor</span>
+    <span class="bg-success d-block">Lorem ipsum dolor 2</span>
+  </div>
+
+  <div class="borda">
+    <!-- Elemento Inline-Block -->
+    <h2 class="title">Elemento Inline-Block</h2>
+    <p class="font-weight-bold" style="font-size:18px; margin:.5px;">Sem Inline-Block:</p>
+    <div class="bg-warning">
+      <span class="bg-success">Lorem ipsum dolor</span>
+      <span class="bg-success">Lorem ipsum dolor 2</span>
+    </div>
+
+    <p class="font-weight-bold" style="font-size:18px; margin:.5px;">Com Inline-Block + estilos:</p>
+    <div class="bg-warning">
+      <span class="bg-success d-inline-block">Lorem ipsum dolor</span>
+      <span class="bg-success d-inline-block" style="margin-top: 50px; width: 400px;">Lorem ipsum dolor 2</span>
+    </div>
+
+
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
