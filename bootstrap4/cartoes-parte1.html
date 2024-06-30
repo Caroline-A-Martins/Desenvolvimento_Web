@@ -1,0 +1,318 @@
+<!-- Aulas 130 e 131 -->
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <title>Bootstrap - Cartões</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    .borda {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+
+    .title {
+      color: #3f4955;
+      border-bottom: 1px solid #3f495556;
+      margin: 10px 0 15px 0;
+      font-size: 26px;
+      padding-bottom: 10px;
+    }
+  </style>
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+  <div class="borda">
+    <h3 class="title">Cartão simples</h3>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-primary">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com imagem</h3>
+    <div class="card">
+      <img class="card-img-top"
+        src="https://images.unsplash.com/photo-1529697216570-f48ef8f6b2dd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        style="width: 100%; height: 100px; object-fit: cover;">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-primary">Leia mais</a>
+      </div>
+      <img class="card-img-bottom"
+        src="https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        style="width: 100%; height: 300px; object-fit: cover;">
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com imagem sobreposta</h3>
+    <div class="card text-white">
+      <img class="card-img"
+        src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        style="width: 100%; height: 250px; object-fit: cover;">
+      <div class="card-img-overlay">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-light">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com cabeçalho</h3>
+    <div class="card">
+      <div class="card-header">
+        Cartão com cabeçalho
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-prymary">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="borda">
+    <h3 class="title">Cartão com cabeçalho e rodapé / Alinhamento</h3>
+    <div class="card ">
+      <div class="card-header text-right">
+        Cartão com cabeçalho
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-primary">Leia mais</a>
+      </div>
+      <div class="card-footer">
+        rodapé
+      </div>
+    </div>
+  </div>
+
+
+  <div class="borda">
+    <h3 class="title">Cartão com navegação</h3>
+    <div class="card">
+      <div class="card-header ">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="">Link 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis, fringilla
+          maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-success btn-block">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com cores no fundo</h3>
+    <div class="card bg-primary text-white mb-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+          lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-light">Leia mais</a>
+      </div>
+
+    </div>
+
+    <div class="card bg-danger text-white mb-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+          lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-light">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com bordas</h3>
+    <div class="card border-primary mb-2">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+          lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-primary">Leia mais</a>
+      </div>
+    </div>
+
+    <div class="card border-danger mb-2">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+          lorem
+          quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="" class="btn btn-outline-danger">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Cartão com colunas</h3>
+    <div class="card-columns">
+      <!-- Início do Cartão 1 -->
+      <div class="card text-white">
+        <img class="card-img"
+          src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="width: 100%; height: 300px; object-fit: cover;">
+        <div class="card-img-overlay">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-light">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 1 -->
+
+      <!-- Início do Cartão 2 -->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-primary">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 2 -->
+
+      <!-- Início do Cartão 3 -->
+      <div class="card bg-primary text-white">
+        <div class="card-header">
+          Cabeçalho do cartão
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-light">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 3 -->
+
+      <!-- Início do Cartão 4 -->
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">Link 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-success btn-block">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 4 -->
+
+      <!-- Início do Cartão 5 -->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-primary">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 5 -->
+
+      <!-- Início do Cartão 6 -->
+      <div class="card text-white">
+        <img class="card-img"
+          src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="width: 100%; height: 300px; object-fit: cover;">
+        <div class="card-img-overlay">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et
+            lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="" class="btn btn-outline-light">Leia mais</a>
+        </div>
+      </div>
+      <!-- Fim do Cartão 6 -->
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
