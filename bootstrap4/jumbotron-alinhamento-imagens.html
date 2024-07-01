@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <title>Bootstrap - Jumbotron e alinhamento de imagens</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <style>
+    .borda {
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    .title {
+      color: #3f4955;
+      border-bottom: 1px solid #3f495556;
+      margin: 0 0 20px 0;
+      font-size: 25px;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+  <div class="borda">
+    <h3 class="border-bottom">Jumbotron</h3>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Música para todos.</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem
+          quis,
+          fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="" class="btn btn-primary btn-lg">Leia mais</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="borda">
+    <h3 class="title">Estrutura para imagens</h3>
+    <div class="media">
+      <img class="mr-3"
+        src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        style="width: 75px; height: 75px; object-fit: cover;">
+      <div class="media-body">
+        <h5>Título do conteúdo</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla
+          maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem, laudantium.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="borda">
+    <h3 class="title">Alinhamentos: align-self-ALINHAMENTO (start, center, end) </h3>
+    <div class="media">
+      <img class="mr-3 align-self-center"
+        src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        style="width: 75px; height: 75px; object-fit: cover;">
+      <div class="media-body">
+        <h5>Título do conteúdo</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla
+          maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla
+          maximus nisl.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="borda">
+    <h3 class="title">Listas com imagens</h3>
+    <ul class="list-unstyled">
+
+      <li class="media border-bottom pb-2 pt-2">
+        <img class="mr-2 align-self-center"
+          src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="width: 120px; height: 120px; object-fit: cover;">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium nostrum
+            necessitatibus quam cum, voluptate provident quas deleniti, obcaecati dolorum delectus. Harum, similique!
+            Adipisci error, delectus beatae a sit inventore tempora ipsa minima nemo veniam voluptates laudantium
+            assumenda consequatur enim facilis numquam quibusdam modi id eveniet nobis omnis. Repellat, voluptas?</p>
+        </div>
+      </li>
+
+      <li class="media border-bottom pb-2 pt-2">
+        <img class="mr-2 align-self-center"
+          src="https://images.unsplash.com/photo-1590013330575-05efd5b0be61?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          style="width: 120px; height: 120px; object-fit: cover;">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium nostrum
+            necessitatibus quam cum, voluptate provident quas deleniti, obcaecati dolorum delectus. Harum, similique!
+            Adipisci error, delectus beatae a sit inventore tempora ipsa minima nemo veniam voluptates laudantium
+            assumenda consequatur enim facilis numquam quibusdam modi id eveniet nobis omnis. Repellat, voluptas?</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
