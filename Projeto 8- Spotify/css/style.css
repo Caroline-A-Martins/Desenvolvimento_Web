@@ -1,4 +1,3 @@
-/* Layouy */
 html,
 body,
 #home {
@@ -70,7 +69,8 @@ nav.navbar-transparente {
     color: black;
 }
 
-.carousel-control-next, .carousel-control-prev{
+.carousel-control-next,
+.carousel-control-prev {
     width: 5%;
 }
 
@@ -87,6 +87,7 @@ nav.navbar-transparente {
 #recursos {
     color: white;
 }
+
 
 #servicos h2,
 h3 {
@@ -169,7 +170,16 @@ h3 {
         margin: 10px 15px;
         font-size: 1em;
     }
+    
+    #servicos img {
+        display: none;
+    }
+    
+    #recursos img {
+        display: none;
+    }
 }
+
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     h1 {
@@ -178,7 +188,14 @@ h3 {
 
     .btn-custom {
         margin: 10px 15px;
+    }
+    
+    #servicos img {
+        display: none;
+    }
 
+    #recursos img {
+        display: none;
     }
 }
 
@@ -186,8 +203,6 @@ h3 {
     h1 {
         font-size: 4em;
     }
-
-
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
