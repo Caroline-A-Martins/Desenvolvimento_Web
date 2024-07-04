@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Manipular strings</title>
+  <script>
+    //propriedade length
+    document.write('Caroline Martins'.length)
+
+    //retorna o caractere que pertence a este indice
+    document.write('Caroline Martins'.charAt(7))
+
+    var nome = 'Caroline Martins'
+    //indica a primeira ocorrencia de um determinado caractere
+    document.write(nome.indexOf('n'))
+
+    //permite substituir uma ocorrencia por outra
+    document.write(nome.replace('Martins', 'Silva'))
+
+    //permite recuperar um caractere de uma determidada posição e x elementos na sua frente
+    document.write(nome.substr(6, 4))
+
+    //Converter todas as letras para minúsculas
+    document.write(nome.toLocaleLowerCase())
+    //Converter todas as letras para maiúsculas
+    document.write(nome.toLocaleUpperCase())
+
+    //remove os espaços das estremidades das strings
+    document.write('-' + nome.trim() + '-')
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
