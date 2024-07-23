@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Array - Métodos de Inclusão e Exclusão de Elementos</title>
+  <script>
+    window.onload = function () {
+      var lista_coisas = []
+      lista_coisas['frutas'] = []
+      lista_coisas['pessoas'] = []
+
+      // Incluir elemento no final do array
+      lista_coisas['frutas'].push('Melancia')
+      lista_coisas['frutas'].push('Banana')
+      lista_coisas['frutas'].push('Maçã')
+
+      // Incluir elemento no início do array
+      lista_coisas['frutas'].unshift('Laranja')
+
+      // Excluir elemento no final do array
+      //lista_coisas['frutas'].pop()
+
+      // Excluir elemento no início do array
+      //lista_coisas['frutas'].shift()
+
+      // exibir arrays como listas HTML
+      function exibirArray(array) {
+        for (var i = 0; i < array.length; i++) {
+          document.write('<li>' + array[i] + '</li>')
+        }
+        document.write('</ul>')
+      }
+
+      exibirArray(lista_coisas['frutas'], 'Frutas');
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>
