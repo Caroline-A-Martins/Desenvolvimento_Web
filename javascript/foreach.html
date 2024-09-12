@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title> Estrutura de repetição parte 6 - Foreach</title>
+  <script>
+
+    var listaFunci = ['Viviane', 'Maria', 'Ana', 'Lucas', 'Marcos', 'Angela']
+
+    var f = function (valor, indice) {
+      console.log(valor , indice)
+    }
+
+    listaFunci.forEach(f)
+
+    /*
+    listaFunci.forEach(function (valor, indice) {
+      console.log(valor,indice)
+    })
+*/
+    /*
+    console.log(listaFunci)
+    document.write(listaFunci[3])
+
+    listaFunci.forEach(function (valor, indice, array) {
+      console.log('indice: ' + indice + '| valor: ' + valor)
+
+      if (valor == 'Lucas') {
+        array[indice] = 'novo valor'
+      }
+    })
+    console.log(listaFunci)
+    document.write('<br />' + listaFunci[3])
+    */
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
