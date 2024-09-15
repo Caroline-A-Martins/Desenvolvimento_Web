@@ -1,97 +1,94 @@
-
 var altura = 0
 var largura = 0
 var vidas = 1
 var tempo = 15
-
 var criarMosquitoTempo = 1500
 
-var nivel = window.location.search
-nivel = nivel.replace('?', '')
+var nivel = window.location.search.replace('?', '')
 
-if (nivel === 'normal') { criarMosquitoTempo = 1500 }
-if (nivel === 'dificil') { criarMosquitoTempo = 1000}
-if (nivel === 'hard') { criarMosquitoTempo = 750}
+if (nivel === 'normal') {
+    criarMosquitoTempo = 1500
+} else if (nivel === 'dificil') {
+    criarMosquitoTempo = 1000
+} else if (nivel === 'hard') {
+    criarMosquitoTempo = 750
+}
 
 function ajustaTamanhoPalcoJogo() {
-	altura = window.innerHeight
-	largura = window.innerWidth
-
-	console.log(largura, altura)
+    altura = window.innerHeight
+    largura = window.innerWidth
+    console.log(largura, altura)
 }
 
 ajustaTamanhoPalcoJogo()
 
 var cronometro = setInterval(function () {
-	tempo -= 1
-	if (tempo < 0) {
-		clearInterval(cronometro)
-		clearInterval(criaMosquito)
-		window.location.href = 'vitoria.html'
-	} else {
-		document.getElementById('cronometro').innerHTML = tempo
-	}
-
+    tempo -= 1
+    if (tempo < 0) {
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+        window.location.href = 'vitoria.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
 }, 1000)
 
+var criaMosquito = setInterval(function () {
+    posicaoRandomica()
+}, criarMosquitoTempo)
+
 function posicaoRandomica() {
+    if (document.getElementById('mosquito')) {
+        document.getElementById('mosquito').remove()
+        if (vidas > 3) {
+            window.location.href = 'game_over.html'
+        } else {
+            document.getElementById('v' + vidas).src = 'img/coracao_vazio.png'
+            vidas++
+        }
+    }
 
-	if (document.getElementById('mosquito')) {
-		document.getElementById('mosquito').remove()
+    var posicaoX = Math.floor(Math.random() * largura) - 90
+    var posicaoY = Math.floor(Math.random() * altura) - 90
 
-		if (vidas < 3) {
-			window.location.href = 'fim_de_jogo.html'
-		} else {
-			document.getElementById('v' + vidas).src = "img/coracao_vazio.png"
-			vidas++
-		}
-	}
+    posicaoX = posicaoX < 0 ? 0 : posicaoX
+    posicaoY = posicaoY < 0 ? 0 : posicaoY
 
-	var posicaoX = Math.floor(Math.random() * largura) - 90
-	var posicaoY = Math.floor(Math.random() * altura) - 90
+    console.log(posicaoX, posicaoY)
 
-	posicaoX = posicaoX < 0 ? 0 : posicaoX
-	posicaoY = posicaoY < 0 ? 0 : posicaoY
+    var mosquito = document.createElement('img')
+    mosquito.src = 'img/mosquito.png'
+    mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
+    mosquito.style.left = posicaoX + 'px'
+    mosquito.style.top = posicaoY + 'px'
+    mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
 
-	console.log(posicaoX, posicaoY)
+    mosquito.onclick = function () {
+        this.remove()
+    }
 
-	//criar o elemento html
-	var mosquito = document.createElement('img')
-	mosquito.src = 'img/mosquito.png'
-	mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatotio()
-	mosquito.style.left = posicaoX + 'px'
-	mosquito.style.top = posicaoY + 'px'
-	mosquito.style.position = 'absolute'
-	mosquito.id = 'mosquito'
-
-	mosquito.onclick = function () {
-		this.remove()
-	}
-
-	document.body.appendChild(mosquito)
+    document.body.appendChild(mosquito)
 }
 
 function tamanhoAleatorio() {
-	var classe = Math.floor(Math.random() * 3)
-
-	switch (classe) {
-		case 0:
-			return 'mosquito1'
-		case 1:
-			return 'mosquito2'
-		case 2:
-			return 'mosquito3'
-	}
+    var classe = Math.floor(Math.random() * 3)
+    switch (classe) {
+        case 0:
+            return 'mosquito1'
+        case 1:
+            return 'mosquito2'
+        case 2:
+            return 'mosquito3'
+    }
 }
 
-function ladoAleatotio() {
-	var classe = Math.floor(Math.random() * 2)
-
-	switch (classe) {
-		case 0:
-			return 'ladoA'
-		case 1:
-			return 'ladoB'
-
-	}
+function ladoAleatorio() {
+    var classe = Math.floor(Math.random() * 2)
+    switch (classe) {
+        case 0:
+            return 'ladoA'
+        case 1:
+            return 'ladoB'
+    }
 }
